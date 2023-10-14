@@ -1,0 +1,61 @@
+/* Basic Of CSS */
+/* p{
+    color: brown;
+}
+
+h1{
+    color: blueviolet;
+} */
+
+
+/* Universal selectors  Of CSS */
+/* *{
+    color: aqua;
+} */
+
+
+/* Type selectors  Of CSS */
+/* h1,p{
+    color: red;
+} */
+
+
+/* Class selectors  Of CSS */
+/* .different{
+    color: palevioletred;
+} */
+
+
+/* ID selectors  Of CSS */
+/* #third{
+    color: blue;
+} */
+
+/* Child selectors  Of CSS */
+/* span>p{
+    background-color: blue;
+} */
+
+
+/* Multiple Child selectors  Of CSS */
+/* ol>li,span{
+    color: red;
+} */
+
+
+/* descendant selector */
+/* ol h1{
+    color: red;
+} */
+
+
+/* Adjacent sibling selector */
+h1+b{
+    color: red;
+}
+
+
+/* general sibling selector */
+h1~p{
+    color: orange;
+}
