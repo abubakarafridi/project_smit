@@ -1,0 +1,45 @@
+/* FONT-FAMILY */
+/* body{
+    font-family: cursive;
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.credits{
+    font-family: 'Courier New', Courier, monospace;
+} */
+
+/* FONT-SIZE */
+/* pixels  */
+/* p{
+    font-size: 16px;
+} */
+/* percentage */
+/* p{
+    font-size: 1000%;
+} */
+/* default values */
+/* p{
+    font-size: x-large;
+} */
+/* EMS */
+/* p{
+    font-size: 1em;
+} */
+
+/* FONT FACE */
+/* @font-face {
+    font-family: 'test';
+    src: url('./fonts/EduTASBeginner-Bold.ttf');
+}
+
+h1{
+    font-family: test;
+} */
+
+/* FONT WEIGHT */
+p{
+    font-weight: 500;
+}
