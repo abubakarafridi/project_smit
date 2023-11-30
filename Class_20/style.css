@@ -1,0 +1,149 @@
+/* UNORDERED LIST */
+/* ul{
+    list-style-type: disc;
+} */
+
+/* ORDERED LIST */
+/* ol{
+    list-style-type: upper-roman;
+} */
+
+/* IMAGES FOR BULLETS */
+/* ul{
+    list-style-image: url("./images/icons-arrow.png");
+}
+
+li{
+    margin: 10px 0px 0px 0px;
+} */
+
+/* LIST STYLE POSITION */
+/* .illuminations{
+    list-style-position: outside;
+}
+
+.season{
+    list-style-position: inside;
+} */
+
+/* LIST SHORTHAND */
+/* ul{
+    list-style: square inside;
+} */
+
+/* TABLE PROPERTIES */
+/* table{
+    width: 600px;
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 20px;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+    text-align: right;
+    background-color: yellow;
+    cursor: pointer;
+}
+
+tr:hover{
+    background-color: yellow;
+    color:green;
+} */
+
+/* EMPTY CELLS */
+/* td {
+        border: 1px solid #0088dd;
+        padding: 15px;
+}
+table {
+    empty-cells: hide;
+} */
+
+/* GAPS BETWEEN CELLS */
+/* td {
+    background-color: #0088dd;
+    padding: 15px;
+    border: 2px solid #000000;
+}
+    table{
+    border-spacing: 50px 150px;
+}
+    table{
+    border-collapse: collapse;
+} */
+
+/* STYLING FORMS */
+/* #github{
+    margin-top: 5px;
+} */
+
+/* input{
+    font-size: 20px;
+    color: beige;
+    background-color: orange;
+} */
+
+/* input{
+    border: 1px solid blue;
+    outline: none;
+    border-radius: 7px;
+} */
+
+/* input:focus{
+    background-color: yellow;
+    border: 1px solid red;
+    color: blue;
+    outline: none;
+} */
+
+/* input:hover{
+    background-color: red;
+} */
+
+/* #email{
+    background-image: url("./images/icons-email.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 17px;
+}
+
+#github{
+    background-image: url("./images/icons-github.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 17px;
+}
+
+#btn{
+    color: orange;
+    text-shadow: 2px 2px 2px black;
+    border: 2px solid yellow;
+    background-color: black;
+}
+
+#btn:hover{
+    background-color: black;
+    color: orange;
+} */
+
+/* STYLING FIELDSET AND LEGENDS */
+/* fieldset {
+    width: 350px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: right;
+}
+    legend {
+    background-color: #efefef;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: left;
+    text-transform: uppercase;
+} */
+
+/* CURSOR STYLES */
+#submit-btn:hover{
+    cursor: help;
+}
