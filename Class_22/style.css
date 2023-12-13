@@ -1,0 +1,81 @@
+/* SIZE OF IMAGE */
+/* img{
+    height: 300px;
+    width: 350px;
+} */
+
+/* ALIGNING IMAGES */
+/* img{
+    margin-left: 300px;
+} */
+
+/* img{
+    float: right;
+} */
+
+/* CENTERING IMAGES */
+/* img{
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 0px auto;
+} */
+
+/* BACKGROUND IMAGES */
+/* body{
+    background-image: url("./images/bari-bike.jpg");
+} */
+
+/* background repeat */
+/* body{
+    background-image: url("./images/choti-bike.jpg");
+    background-repeat: repeat-y;
+} */
+
+/* background attachment */
+/* body{
+    font-size: xx-large;
+    background-image: url("./images/bari-bike.jpg");
+    background-attachment: fixed;
+} */
+
+/* background position */
+/* body{
+    background-image: url("./images/choti-bike.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+} */
+
+/* GRADIENTS */
+
+/* linear gradient */
+/* body{
+    background-image: linear-gradient(red,yellow);
+    background-repeat: no-repeat;
+    height: 100vh;
+} */
+
+/* #grad1{
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    height: 400px;
+    width: 400px;
+    margin: 0px auto;
+} */
+
+/* radial gradient */
+/* #grad1{
+    background-image: radial-gradient(closest-side at 60% 55%, red, yellow, black);
+    height: 400px;
+    width: 400px;
+    margin: 0px auto;
+} */
+
+/* conic gradient */
+/* #grad1{
+    background-image: conic-gradient(from 90deg, red, yellow, green);
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    margin: 0px auto;
+} */
