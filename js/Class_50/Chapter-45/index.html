@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Link</title>
+</head>
+<body>
+    <!-- Inline event handling combine html with js -->
+    <!-- A link when Clicks display Hi -->
+    <!-- <a href="#" onClick="alert('Hi')">Click</a> -->
+    <!-- This link behave differently instead of taking user to different pages it rather displays  "Hi"-->
+    
+    <!-- Lets break down what happens -->
+    <!-- -Instead of redirecting it to other pages it use # to reload the same page -->
+    <!-- -When the link is clicked the onClicks function is executed there is a convetion to write onClick and not OnClick and others-->
+
+    <!-- One more thing is that onClick = "alert('Hi')" the message is enclosed in single quotes and not double quotes-->
+    <!-- In javascript you aren't allowed to use double quotes in double quotes and single quotes in single quotes-->
+    <!-- dont use # in href it reload and bring you on top of the page-->
+    <!-- use javascript:void(0) it stays at that destination if the link is clicked-->
+
+    <!-- <a href="Javascript:void(0)" onclick="alert('Hi')">Click</a> -->
+
+    <!-- It works page is not reloading. In the quotation marks you can have as many statement as you want no limit-->
+    <!-- Here is an example -->
+
+    <!-- <a href="Javascript:void(0)" onClick="var greet='Hi'; alert(greet)";>Click</a> -->
+
+    <a href="Javascript:void(0)" onClick="popup('Hi how are yoy')">Click</a>
+    <!-- Event handler calls the function passing arguments to that function and displays it-->
+    
+    <script src="./script.js"></script>
+</body>
+</html>

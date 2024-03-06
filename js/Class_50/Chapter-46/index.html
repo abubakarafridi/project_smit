@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Button</title>
+</head>
+<body>
+    <!-- Suppose if you click a button, and alert saying "Hello World". -->
+    <input type="button" value="Click" onclick="alert('Hello World!');">
+    <!-- The event handler is the same, weather you're using link or button: onClick="alert('Hello World!');" -->
+    <!-- But the start is different: <input type="button" value="Click" -->
+
+    <!-- An image can be use as a hot link -->
+    <!-- <a href="https://www.google.com" cursor="pointer"><img src="../icons/phone.png"></a> -->
+
+    <!-- The image can be trigger with an event when clicked a popup should come-->
+    <img src="../icons/phone.png" onclick="greetWithMessage()">
+    <script src="./script.js"></script>
+</body>
+</html>
