@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting Styles</title>
+    <style>
+        /* .orignal {
+            font-size: 2rem;
+        }
+        .big {
+            font-size: 5rem;
+        } */
+    </style>
+</head>
+<body>
+    <!-- In Chapter 52 we learned that the how to change style by adding a class -->
+    <p class="orignal" id="p1" onmouseover="makeBig();">Hi</p>
+    <script>
+        // function makeBig() {
+        //     document.getElementById("p1").className += " big";
+        // }
+
+        // There is another way to specific style the html element
+
+        function makeBig() {
+            document.getElementById("p1").style.fontSize = "5rem";
+        }
+        // Unlike the first example the new example dosen't change any styles assigned to the element.
+
+        // This statement left floats the image
+        document.getElementById("pics99").style.cssFloat = "left";
+
+        // This statement makes an element invisible
+        document.getElementById("div9").style.visibility = "hidden";
+
+        // This statement gives left and right margin to element
+        document.getElementById("mainPic").style.margin = "0 10px 0 10px";
+
+        // It is best to check if it is "float" or "cssFloat"? rather than guessing
+
+        // You can read properties and also set them. However the rules aren't clear if you want to write them
+        var m = document.getElementById("mainPic").style.margin;
+
+        // it tell you the margin specified in inline and not in the css 
+        // This statement will give you both inline and css specified margin
+
+        var m = document.getElementById("mainPic").margin;
+        // This statement has limitation it dont support internet explorer before version 9 
+    </script>
+</body>
+</html>

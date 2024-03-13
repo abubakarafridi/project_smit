@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapping Images</title>
+</head>
+<body>
+    <!-- In chapter 47 we learned that how to replace an image when mouse over that image -->
+    <!-- Here is one way of doing image replace -->
+    <!-- <img src="./phone.png" onmouseover="src='./phone2.png'"> -->
+
+    <!-- Here is another way of doing the image replace-->
+    <!-- <img src="./phone.png" id="before" onmouseover="swapImg();"> -->
+    
+    <!-- There is another way of doing the same thing -->
+    <img src="./phone.png" id="before" onmouseover="swapImg(id, './phone2.png')">
+    <script>
+        // This is the function
+        // function swapImg() {
+        //     let swap = document.getElementById("before");
+        //     swap.src = "./phone2.png";
+        // }
+
+        function swapImg(eid, swap) {
+            document.getElementById("before").src = swap;
+        }
+    </script>
+</body>
+</html>

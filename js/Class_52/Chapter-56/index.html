@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target all element by tag name</title>
+</head>
+<body>
+    <!-- If you want all the paragraph in html to increase there size -->
+    <!-- Here is a better way of doing it and not give each paragraph an id -->
+    <!-- <div>
+        <h1>I am h1</h1>
+        <p>I am p </p>
+        <p>I am another p</p>
+        <p>and i am also another p</p>
+    </div> -->
+    <!-- <input type="button" value="change color" onclick="change();"> -->
+    <script>
+        // This statement finds all the paragraph and assign it to a variable
+        // var para = document.getElementsByTagName("p");
+        // The variable holds the collection of array of paragraph
+        // para[0], para[1], para[2] it holds each paragraph on that index para.length is 3
+        
+        // var textCenter = para[1].innerHTML;
+        // The variable textCenter has been assigned "I am another p"
+
+        // para[1].innerHTML = "This SUV is too big";
+        // The paragraph at index 1 is changed to that text above.
+
+        // Loop that changes the font family of paragraphs
+        // for(let i = 0; i < para.length; i++) {
+        //     para[i].style.fontFamily = "Verdana, Geneva, Tahoma, sans-serif";
+        // }
+
+        let pics = document.getElementsByTagName("img");
+        // This statement get all the img in the html and assigns it to pics
+
+        let divs = document.getElementsByTagName("div");
+        // This statement get all the div in html and assigns it to divs
+
+        let uLists = document.getElementsByTagName("ul");
+        // This statement get all the ul in html and assigns it to the uLists
+    </script>
+</body>
+</html>

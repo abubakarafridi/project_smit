@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Target Some Elements By Tag Name</title>
+  </head>
+  <body>
+    <!-- In the last chapter you learned how to make a collection of array of all the element in a document
+        that have a particular tag name -->
+    <script>
+        // pars is assigned a collection of paragrapht
+        var pars = document.getElementsByTagName("p");
+
+        // This statement gets the element at a particular index and assigns it to a variable
+        var textInMiddleParagraph = pars[1].innerHTML;
+
+        // Suppose you want some of the element of the tag
+        var e = document.getElementsById("rules");
+        var paragraph = e.getElementsById("p");
+        // here is the code for geting some to the element of the tag name
+
+        // line 19 "e" is assigned Id rules
+        // line 20 paragraph is assigned all the p element in that div which has id rules
+
+        // Suppose you have a table with a white background when user clicks it turns pink
+        let t = document.getElementById("table9");
+        let cells = t.getElementsByTagName("td");
+        for (let i = 0; i < cells.length; i++) {
+            cells[i].style.backgroundColor = "pink";
+        }
+
+        // here is how it works
+        // 1. Targets the table with id 
+        // 2. td collection is assigned to cells
+        // 3-5. loops through all of them to change the background color
+    </script>
+  </body>
+</html>

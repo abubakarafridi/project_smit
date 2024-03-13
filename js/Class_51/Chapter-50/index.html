@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting field values</title>
+</head>
+<body>
+    <!-- code for when a ZipCode is entered the city field auto completes -->
+    <!-- Here is the relevent markup for the form -->
+    <form>
+        ZIP:<br>
+        <input type="text" id="zip" onblur="fillCity();"><br>
+        City:<br>
+        <input type="text" id="city">
+    </form>
+
+    <!-- The click out of the field the fillCity function event triggers -->
+    <!-- This example shows that you can not only read the value but also write a value into the field -->
+
+    <!-- What happen in this code is that when the zip is filled and fillCity function is executed-->
+    <!-- The value zip goes to the the variable it stores the value -->
+    <!-- The value using the switch statement is compared to a the zip code when condition is true it stores the value into a new variable -->
+    <!-- The value is given to the id city by the variable autofill -->
+    <!-- Then after that the form is filled with that value -->
+    <script src="./script.js"></script>
+</body>
+</html>

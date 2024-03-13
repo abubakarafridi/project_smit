@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading Field values</title>
+  </head>
+  <body>
+    <!-- Suppose that you have created an email form.
+    Email field is required.
+    The form has submit button that the user click to submit the information. -->
+    
+    <!-- <form>
+        Email:
+        <input type="text">
+        <input type="submit" value="Submit">
+    </form> -->
+    <!-- Now we have three elements -->
+    <!-- The text email -->
+    <!-- The text field for user's email address -->
+    <!-- The submit button-->
+    
+    <!-- I am going to give the email field an id -->
+    <!-- <form>
+      Email:
+      <input type="text" id="email"/>
+      <input type="submit" value="Submit" />
+    </form> -->
+    
+    <!-- I am going to add an event hander using onsubmit -->
+    <form onsubmit="checkAddress('email');">
+        Email:
+        <input type="text" id="email"/>
+        <input type="submit" value="Submit" />
+    </form>
+
+    <!-- Note that the onsubmit button clicks the checkAddress executes -->
+    <!-- Note that even though the onsubmit button is not in the submit button tag but in form tag -->
+    <!-- It is because that the onsubmit is applies on the whole form -->
+
+    <!-- Here where it gets intersting when the form is submitted the function checkAddress looks for anything entered in the email tag -->
+    <!-- If there is noting an alert reminding that the email is required -->
+
+    <!-- In order to look for anything in the email field an id is used for that -->
+    <script src="./script.js"></script>
+  </body>
+</html>
