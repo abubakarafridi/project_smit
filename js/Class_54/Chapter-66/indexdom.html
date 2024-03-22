@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The DOM:Attribute names and values</title>
+</head>
+<body>
+    <p id="p1" style="font-size: 30px; visibility: hidden;" class="hi">hi</p>
+    <script>
+        // In previous chapters you learned how to make a collection of elements that share the same
+        // tag name, with a statement like this...
+
+        // var list = document.getElementsByTagName("p");
+        
+        // ...and how to make a collection of all the children of an element, with a statement like
+        // this...
+        
+        // var list = document.getElementById("p1").childNodes;
+
+        // Similarly you can make a collection of all the attributes of an element with a statement like this...
+
+        // let list = document.getElementById("p1").attributes;
+
+        // With this now we can get how many attributes an element have.
+
+        // let listNum = list.length;
+
+        // The above we can also write it like this
+
+        // let list = document.getElementById("p1").attributes.length;
+
+        // using array notation to find attributes name
+
+        // let nName = list[2].nodeName;
+
+        // ...the variable nName is assigned "class"
+
+        // We can also find the value of the node
+
+        // let nValue = list[2].nodeValue;
+
+        // the variable nValue is assigned "hi".
+    </script>
+</body>
+</html>

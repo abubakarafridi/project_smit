@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The DOM:Inserting nodes</title>
+</head>
+<body>
+    <div id="div1"> 
+        <p>hi how are you</p>
+        <p>hello where are</p>
+    </div>
+    <script>
+        // This set of statements targets a div (line 1), creates a new
+        // paragraph element (line 2), creates the text to go in it (line 3), places the text into the paragraph
+        // (line 4) and then appends the paragraph element along with its text content to the targeted div (line 5).
+
+        // let parentDiv = document.getElementById("div1");
+        // let newParagraph = document.createElement("p");
+        // let t = document.createTextNode("hello");
+        // newParagraph.appendChild(t);
+        // let paragraph1 = parentDiv.firstChild;
+        // parentDiv.insertBefore(newParagraph, paragraph1);
+
+        // The example above selects one of the children of the parent element as the target (line 5),
+        // and tells JavaScript to insert the new element and its text content before that element (line 6).
+
+
+        // To remove a node, use removeChild.
+
+        let parentDiv = document.getElementById("div1");
+        // let newParagraph = document.createElement("p");
+        // let t = document.createTextNode("hello");
+        // newParagraph.appendChild(t);
+        // parentDiv.appendChild(newParagraph);
+        let nodeToRemove = parentDiv.childNodes[3];
+        parentDiv.removeChild(nodeToRemove);
+    </script>
+</body>
+</html>

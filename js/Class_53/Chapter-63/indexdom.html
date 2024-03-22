@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The DOM: Getting a target's name</title>
+</head>
+<body>
+    <!-- <h1 id="hello">hi</h1> -->
+    <div id="hello">
+        <p>hi</p>
+        <p>hello</p>
+    </div>
+    <script>
+        // let target = document.getElementById("hello");
+        // let nType = target.nodeType;
+        // console.log(nType);
+        
+        // If the node is an element the varible nType will be assigned 1.
+        // If it is a text it will be assigned 3.
+
+        // To get additonal information about the node we use nodeName
+        // let parent = document.getElementById("hello");
+        // let target = parent.childNodes[1];
+        // let nName = target.nodeName;
+        // console.log(nName);
+        
+        // all the node name are given in all capital letters
+
+        // If its text node you can find its value
+        let parent = document.getElementById("hello");
+        let target = parent.childNodes[1];
+        let nTextContext = target.nodeValue;
+        console.log(nTextContext);
+        
+        </script>
+</body>
+</html>

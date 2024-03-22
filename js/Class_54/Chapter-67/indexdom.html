@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The DOM:Adding nodes</title>
+</head>
+<body>
+    
+    <script>
+        // Using DOM you can add element, attribute and text node anywhere in the head or the body
+        // In this chapter we will learn that how to create a paragrpah node give at attribute, and fill with text content.
+        // In next chapter we will learn how to insert the paragraph into the page.
+
+        // let nodeToAdd = document.createElement("p");
+
+        // The above creates a paragraph element and you can create any element with it. link, div, img.
+
+        // Here's a statement that creates an image element.
+        // let imgNode = document.createElement("img");
+
+        // We can set attribute of an element that has not been placed yet in the document body
+
+        // nodeToAdd.setAttribute("class", "regular");
+
+        // The code gives the element p a class and the name of the class is "regular".
+
+        // If you wanted to you could add a span, a style, even an id.
+
+        // This statment add a border attribute to an image element.
+
+        // imgNodeToAdd.setAttribute("border", "1");
+
+        // This code gives image 1 pixel border.
+
+        // Now let's give it some text content. Again, we begin by creating the node we want.
+        
+        let newTxt = document.createTextNode("Hello");
+
+        // The statement above creates a text node with the content "Hello!"
+        // Next, we place the text into the paragraph element.   
+
+        nodeToAdd.appendChild(newTxt);
+
+        // The statement above adds the new text node, whose content is "Hello!", to the new paragraph node.
+        // Now we have a new paragraph node with a class attribute and some text content. We're ready to insert it into the page.
+    </script>
+</body>
+</html>

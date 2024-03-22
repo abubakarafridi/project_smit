@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The DOM: Attributes</title>
+  </head>
+  <body>
+    <a href="http://www.amazon.com">Shop</a>
+    <!-- You have learn that a is first and only child but what about href -->
+    <!-- href is definitely a node of the DOM. We could say that is is a subsidiary of a.-->
+    <!-- But it's not a child of a it is attribute of a. -->
+
+    <!-- An attribute is have an equal sign and qutoetion this is a sign of attribute -->
+    <!-- The word on the left is an attribute name and on the right is the attribute value -->
+    <!-- More Attributes -->
+    <!-- <div id="p1"> -->
+    <p id="div1">
+    <!-- <span style="font-size: 24px"> -->
+    
+    <!-- An element can have multiple attributes -->
+    <!-- <img src="dan.gif" alt="Dan" height="42" width="42"> -->
+
+    <!-- You can find out whether an element has a paritcular attribute -->
+    <script>
+        // let target = document.getElementById("p1");
+        // let hasClass = target.hasAttribute("class");
+        // console.log(hasClass);
+
+        // Line 26 assigns the element to a variable, target. Line 27 checks to see if the element has
+        // an attribute called "class". If it does, the variable hasClass is assigned true. If not, it is
+        // assigned false.
+
+        // You can also get attribute value using getAttribute
+        // let target = document.getElementById("div1");
+        // let attribute = target.getAttribute("class");
+        // console.log(attribute);
+
+        // Line 35 assigns the element to a variable, target. Line 36 reads the value of the attribute
+        // and assigns it to the variable attribute.
+
+        // You can set the value of an attribute with setAttribute.
+
+        // let target = document.getElementById("div1");
+        // target.setAttribute("class", "paragraph");
+        // console.log(target);
+
+        // Line 44 assigns the element to a variable, target. Line 45 gives it an attribute "class" (the
+        // first specification inside the parens) with a value of "paragraph" (the second specification inside
+        // the parens).
+
+    </script>
+  </body>
+</html>

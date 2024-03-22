@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The DOM parent and Children</title>
+  </head>
+  <body>
+    <div>
+      <p>level There's not much to this.</p>
+      <p>Nor to this.</p>
+    </div>
+
+    <script>
+      // Fundamental way of designating nodes to DOM.
+      // You can designate any node of DOM by saying the node is xth child of a particular parent.
+      // You can designame a node by saying it's the parent of any child.
+      // Except document node each node is enclosed in another node.
+      // html encloses the head and body node, body encloses div node.
+      // div enloses two p node
+      // both p node encloses text node inside.
+      // When a node is enclosed by another node the encloased node is called the parent.
+      // div is the child of body and also body is the parent of div.
+      // html is the child of document, head and body are the children of html, div is the child of body.
+      // two p's are the children of div.
+      // So we can also say that document is the parent of html, html is the parent of head and body.
+      // head is the parent of title, title is the parent of text node.
+      // Nodes with the same parent are known as siblings.
+      
+    </script>
+  </body>
+</html>

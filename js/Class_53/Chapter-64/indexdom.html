@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The DOM: Counting elements</title>
+</head>
+<body>
+    <!-- <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol> -->
+    <div id="images">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </div>
+    <script>
+        // We know that tagname give the variable a collection of element
+        // let liElments = document.getElementsByTagName("li");
+
+        // Once you have a collection of element you can find out how many are there
+
+        // let howManyLi = liElments.length;
+
+        // Then you can cycle through the element and give text to those that has no text
+
+        // for(let i = 0; i < howManyLi; i++) {
+        //     if (liElments[i].innerHTML ===  "") {
+        //         liElments[i].innerHTML = "coming soon";
+        //     }
+        // }
+
+        let parent = document.getElementById("images");
+        let childrens = parent.childNodes
+        let howmanychildrens = childrens.length;
+        let howManyImage = 0;
+        for(let i = 0; i < howmanychildrens; i++) {
+            if(parent.childNodes[i].nodeName.toLowerCase() === "img") {
+                console.log(i);
+            }
+        }
+    </script>
+</body>
+</html>

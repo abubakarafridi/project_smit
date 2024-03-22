@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The DOM: More ways to target elements</title>
+</head>
+<body>
+    <div id="div1">
+        <div id="div2">
+            <p>Chicago</p>
+            <p>Kanses city</p>
+            <p>St. louis</p>
+        </div>
+    </div>
+    <script>
+        // There are other way to target elements suppose you want to target childNodes[0] you can use firstChild
+        // And to target the childNodes[10] you can use lastChild
+
+        // let targetNode = parent.childNodes[0];
+
+        // is the same as 
+
+        // let targetNode = parent.firstChild;
+
+        // for the target the 3 child
+        // let targetNode = parent.childNodes[3];
+
+        // is the same as 
+
+        // let targetNode = parent.lastChild;
+
+        // You can work backward by target parent node of child node.
+
+        // let kidNode = document.getElementById("div2");
+        // let parentNode = kidNode.parentNode;
+        // console.log(parentNode);
+
+        // You can use nextSibling and previousSibiling to target the next or previous child in the collenction.
+        // let firstEl = document.getElementById("div1");
+        // let secondEl = firstEl.nextSibling;
+        // console.log(secondEl);
+        
+        // If there is no nextSibiling or previousSibling you get null. 
+        let firstEl = document.getElementById("div1");
+        let secondEl = firstEl.previousSibling;
+        console.log(secondEl);
+    </script>
+</body>
+</html>
