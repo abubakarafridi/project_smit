@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation zip codes</title>
+</head>
+<body>
+    <form onsubmit="return validateZIP()">
+        <input type="text" id="zip" maxlength=5>
+        <input type="submit" value="sumbit">
+    </form>
+    <script>
+        // function validateZIP() {
+        //     let numChars = document.getElementById("zip").value.length;
+        //     if (numChars < 5) {
+        //         alert("Please enter a 5 digit code.");
+        //         return false;
+        //     }
+        // }
+        // If the number of characters in the field is fewer than 5, an alert displays and false is
+        // returned to the calling code, cancelling the form submission.
+
+        // Another question to ask about the ZIP field entry is whether the user has entered only
+        // numbers. Here's the additional code for that.
+
+        function validateZIP() {
+            let valueEntered = document.getElementById("zip").value;
+            let numChars = valueEntered.length;
+            if (numChars < 5) {
+                alert("Please enter a 5 digit code.");
+                return false;
+            }
+            for (let i = 0; i <= 4; i++) {
+                var char = parseInt(valueEntered[i]);
+                if (isNaN(char)) {
+                    alert("enter only numbers");
+                    return false
+                }
+                console.log(char);
+            }
+        }
+    </script>
+</body>
+</html>

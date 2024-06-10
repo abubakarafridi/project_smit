@@ -1,0 +1,32 @@
+<!-- Instead of using inline event handlers in your HTML, 
+    you can keep your JavaScript code separate from your HTML content by assigning event handlers through JavaScript. 
+    This approach aligns with best practices for separating content and functionality.
+
+Key Points:
+
+Get Element by ID: Use document.getElementById("id") to select the element.
+Assign Event Handler: Assign the event handler using element.event = functionName.
+Function Definition: The function to be called is defined normally. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling Example</title>
+</head>
+<body>
+    <!-- not recommanded way -->
+    <!-- <input type="button" value="Click" onClick="sayHello();"> -->
+
+    <!-- recommanded way -->
+    <input type="button" value="Click" id="button1">
+    <script>
+        let b1 = document.getElementById("button1");
+        b1.onclick = sayHello;
+        function sayHello(){
+            alert("hi there");
+        }
+    </script>
+</body>
+</html>

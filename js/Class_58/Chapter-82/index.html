@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation: text fields</title>
+</head>
+<body>
+    <!-- Form Validation helps you find out if the user filling the form right -->
+    <form onsubmit="return checkForlastName();">
+        Please enter your last name.<br>
+        <input type="text" id="lastNameField">
+        <input type="submit" value="Submit Form">
+    </form>
+    <!-- When the user click submit what function you give it will be called -->
+    <script>
+        // function checkForlastName() {
+        //     if (document.getElementById("lastNameField").value.length === 0) {
+        //         alert("enter you last name");
+        //         return false;
+        //     }
+        // }
+        // line 18 checks wheather the input field is empty or not
+        // line 20 returns false so that the form isn't submitted
+
+        // Use focus method to place the cursor in the field thats needs to be completed
+        // function checkForlastName() {
+        //     if (document.getElementById("lastNameField").value.length === 0) {
+        //         alert("enter you last name");
+        //         document.getElementById("lastNameField").focus();
+        //         return false;
+        //     }
+        // }
+
+        // lets put document.getElementById... in a variable to stop repeating our self
+        // function checkForlastName() {
+        //     let lastName = document.getElementById("lastNameField");
+        //     if (lastName.value.length === 0) {
+        //         alert("enter you last name");
+        //         lastName.focus();
+        //         return false;
+        //     }
+        // }
+
+        // lets direct the user attention to the field by make the background yellow
+        function checkForlastName() {
+            let lastName = document.getElementById("lastNameField");
+            if (lastName.value.length === 0) {
+                alert("enter you last name");
+                lastName.focus();
+                lastName.style.background = "yellow";
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

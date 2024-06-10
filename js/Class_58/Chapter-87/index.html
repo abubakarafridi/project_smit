@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>try and catch</title>
+</head>
+<body>
+    
+    <script>
+        // If you run the following code, nothing will happen.
+        // function greetWorld() {
+        // var greeting = "Hello world!";
+        // aler(greeting);
+        // }
+
+        // greetWorld();
+        // alert is misspelled as aler it is easier to catch this error because it is a small code but
+        // If it a very long code that will be very diffecult to catch the error for that we have
+        // Try and Catch
+        function greetWorld() {
+            try {
+                var greeting = "hello world";
+                aler(greeting);
+            } catch (error) {
+                alert("watch closely you missed t in alert " + error)
+            }
+        }
+
+        greetWorld();
+    </script>
+</body>
+</html>

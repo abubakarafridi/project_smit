@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return checkPassword();">
+        Enter a password<br>
+        (8-12 chars, at least 1 number, no spaces)<br>
+        <input type="text" id="f1">
+        <input type="submit" value="submit">
+    </form>
+
+    <script>
+        // By adding one or more throw statements, you can define your own errors in a try...catch pair. 
+        // This can be useful for dealing with unexpected user behavior.
+
+        // This is the function that tests whether the user's input has met the requirements. If not, the
+        // function displays an alert.
+
+        function checkPassword() {
+            try {
+                let pass = document.getElementById("f1").value;
+                if (pass.length < 8) {
+                    throw "Please enter at least 8 characters";
+                }
+                if (pass.indexOf(" ") !== -1) {
+                    throw "No spaces in the password, please.";
+                }
+                let numberSomewhere = false;
+                for (let i = 0; i < pass.length; i++) {
+                    if (isNaN(pass[i]) === false) {
+                        numberSomewhere = true
+                        break;
+                    }
+                }
+                if (numberSomewhere === false) {
+                    throw "include at least 1 number"
+                }
+            } catch (error) {
+                alert(error);
+            }
+        }
+    </script>
+</body>
+</html>

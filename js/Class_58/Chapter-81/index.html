@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Blocker</title>
+</head>
+<body>
+    <script>
+        // function checkForPopBlocker() {
+        //     let testpop = window.open("", "", "width=100, height=100");
+        //     if(testpop === null) {
+        //         alert("please disable your popup blocker")
+        //     }
+        //     testpop.close();
+        // }
+        // Here's the line-by-line breakdown:
+        // 2 Attempts to open a tiny window
+        // 3-4 If the handle is assigned null, meaning the window couldn't open, an alert displays
+        // 6 Closes the window
+
+        // The above will not work for internet browser because it returns undefined instead of null
+        // function checkForPopBlocker() {
+        //     let testpop = window.open("", "", "width=100, height=100");
+        //     if(testpop === null || typeof(testpop) === "undefined") {
+        //         alert("please disable your popup blocker")
+        //     }
+        //     testpop.close();
+        // }
+
+        // normally you would run this when the page loads
+        // <body onLoads = "checkForPopBlocker();">
+            
+        // checkForPopBlocker();
+    </script>
+</body>
+</html>

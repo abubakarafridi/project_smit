@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation drop down</title>
+</head>
+<body>
+    <!-- A drop down for select a state -->
+    <!-- If someone select a state that ok -->
+    <!-- but what if they forget to select a state in that situation why perform form validation -->
+    <!-- <form onsubmit="return checkForSelection();"> -->
+    <form onsubmit="return checkForSelection('states');">
+        <select id="states">
+            <option value="" selected="selected">SELECT A STATE</option>
+            <option value="Al">Alabama</option>
+            <option value="Ak">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+        </select>&nbsp;&nbsp;
+        <input type="submit" value="Submit Form">
+    </form>
+    <!-- when submit button is clicked checkForSelection is called -->
+
+    <script>
+        // function checkForSelection() {
+        //     if (document.getElementById("states").selectedIndex === 0) {
+        //         alert("Please select a state");
+        //         return false;
+        //     }   
+        // }
+
+        // In the function, if selectedIndex is 0 (line 26), it means the user hasn't made a selection.
+        // Line 27 displays an alert asking her to select. Line 28 returns false, cancelling the form submission.
+
+        function checkForSelection(selectedID) {
+            var target = document.getElementById(selectedID)
+            if (target.selectedIndex === 0) {
+                alert("Please select a state");
+                return false;
+            }   
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation radio buttons</title>
+</head>
+<body>
+    <form onsubmit="return validateRadios();">
+        <input type="radio" name="rl" value="cat">Cat<br>
+        <input type="radio" name="rl" value="bat">Bat<br>
+        <input type="radio" name="rl" value="hat">Hat<br>
+        <input type="submit" value="Submit Form">
+    </form>
+
+    <script>
+        function validateRadios() {
+            var radios = document.getElementsByName("rl");
+            for (let i = 0; i < radios.length; i++) {
+                if (radios[i].checked) {
+                    return true;
+                }
+            }
+            alert("Please check one.");
+            return false
+        }
+
+        // Line 18 collects all the radio buttons and assign it to radios
+        // line 19 to 23 loops throught the radio buttons
+        // line 20 checks it the buttons are checked and returns true
+        // if the buttons are not checked line 24 gives an alert and returns false so the form is not submited
+        
+    </script>
+</body>
+</html>
