@@ -1,0 +1,5 @@
+online class before eid ul adha
+
+created weather app in react using axios and openweatherapi
+
+The weather app was given as assignment and is pushed to github.

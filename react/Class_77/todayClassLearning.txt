@@ -1,0 +1,9 @@
+In Class_77 i have covered useEffect from the w3schools
+
+useContext hook
+
+props drilling
+
+react icons
+
+applied light/dark theme

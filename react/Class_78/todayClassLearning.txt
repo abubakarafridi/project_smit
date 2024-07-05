@@ -1,0 +1,24 @@
+redux toolkit
+
+counter app with redux toolkit
+
+Learning from the redux toolkit website:
+
+1) Redux toolkit Quick start tutorial! This tutorial will briefly introduce you to Redux Toolkit and teach you how to use it.
+2) How to read this tutorial: For this tutorial you are using Redux Toolkit with react, but you can also use it with other UI layers
+   as well. The examples are based on a typical React-App folder structure where all application code is in src.
+3) Install Redux Toolkit and React-Redux add it to your project folder.
+4) Create a Redux Store with file named "src/app/store.js". Import the configureStore API from Redux Toolkit. We'll start by creating
+   an empty redux store and exporting it.
+5) Provide redux Store to react once the store is created we make it available to our React components by putting a React-Redux 
+   <Provider> around our application (wrap the component <App/> inside it). import the redux store we just created, put a <Provider>
+   around your (wrap your) <App>, and pass the store as a prop.
+6) Create a Redux State Slice Add new file named "src/features/counter/counterSlice.js". In that file, import the createSlice API from
+   redux Toolkit. Creating a slice requires a string name to identify the slice, an intial state, and one or more reducers function to
+   define how the state can be updated. once a slice is created, we can export the generated Redux action creators and the reducer
+   function for the whole slice.
+7) Add slice reducers to the store we need to import the reducer function from the counter slice and add it to our store. 
+   By defining a field inside the reducer parameter, we tell the store to use this slice reducer function to handle
+   all updates to that state.
+8) Use Redux State and Actions in react components we can use React-Redux hooks to let React component interact with the redux store.
+   We can read data from the store with useSelector, and dispatch actions using useDispatch.

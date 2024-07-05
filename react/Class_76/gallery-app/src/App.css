@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.images-container img {
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.4s;
+    width: 200px;
+    height: auto;
+}
+
+.images-container img:hover {
+    transform: scale(1.04);
+}
