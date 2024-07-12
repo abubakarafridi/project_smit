@@ -1,0 +1,2 @@
+In todays class sir has coverd how to make an login and logout form. And also on how to authenticate using google with the help
+of firebase.
