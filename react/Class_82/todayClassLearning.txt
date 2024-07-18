@@ -1,0 +1,2 @@
+In todays class sir have completed the login and logout authtication with google and made protected pages means someone without login
+cant access the private pages.
