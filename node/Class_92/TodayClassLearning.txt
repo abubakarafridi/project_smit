@@ -1,0 +1,1 @@
+Sir instructed us to create a firebase auth app to see what kind of errors did we get to solve it.
