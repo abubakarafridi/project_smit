@@ -1,0 +1,18 @@
+IN TODAY CLASS WE LEARNED THE DIFFERNCE BETWEEN 
+
+Node js url module vs javascript url constructor:
+The URL constructor is a built-in global object in Node.js (starting from Node.js version 10 and above), so there is no need to import the url module.
+
+IS THE URL MODULE IN NODEJS DEPRECATED?
+
+No, the url module in Node.js is not deprecated. It is still available and useful in certain scenarios, especially when dealing with legacy code or when you need to work with the older callback-style methods like url.parse().
+
+However, the URL constructor (which is part of the WHATWG URL Standard) is now the preferred method for parsing and working with URLs in most modern Node.js applications. It provides a more standardized and consistent interface, which is why it is often used in newer code.
+
+WE ALSO LEARNED ABOUT POSTMAN
+what, why?
+ui and features tour
+setting like theme etc
+creating account
+maitaining collections, environments
+creating and using variables in it like globals

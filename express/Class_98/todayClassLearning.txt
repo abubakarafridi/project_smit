@@ -1,0 +1,3 @@
+So in today class we have started the exprees js which is a framework of node js.
+We write hello world in express.
+and the four request that are done in node js PUT,POST,DELETE,GET.
